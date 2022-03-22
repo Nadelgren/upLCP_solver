@@ -1,0 +1,86 @@
+The problem entered was an instance of spLP having the form
+
+	min 	c(x)'y
+	s.t.	A(x)y <= b(x)
+	    	y >= 0
+
+with c(x) =
+
+	[ 1  ]
+	[ 1  ]
+	[ 1  ]
+	[ 1  ]
+
+and A(x) =
+
+	[ -2        -1        -6        1        ]
+	[ -2        3         -1        x_1 - 2  ]
+	[ 3         x_1 - 4   5         -1       ]
+
+and b(x) =
+
+	[ -2  ]
+	[ 7   ]
+	[ -5  ]
+
+subject to the additional restriction that 'x' must satisfy:
+
+	-x_1  <= 2    
+	x_1   <= 2    
+
+
+
+**************************************************************************************************
+
+The solution was computed in 0.04 seconds and consists of the following regions.
+
+**************************************************************************************************
+
+
+
+
+Region 1:
+
+	u_1 = (-x_1 + 9)/(-6*x_1 + 29)      >= 0 
+	s_2 = (-44*x_1 + 86)/(-6*x_1 + 29)  >= 0 
+	u_3 = 5/(-6*x_1 + 29)               >= 0 
+	v_1 = (-4*x_1 + 26)/(-6*x_1 + 29)   >= 0 
+	y_2 = 40/(-6*x_1 + 29)              >= 0 
+	y_3 = (-2*x_1 + 3)/(-6*x_1 + 29)    >= 0 
+	v_4 = (-7*x_1 + 33)/(-6*x_1 + 29)   >= 0 
+
+	Valid over:	-2 <= x_1 <= 1.50000000000000
+
+
+Region 2:
+
+	s_1 = (-2*x_1 + 3)/(x_1 - 4)  >= 0 
+	s_2 = (7*x_1 - 13)/(x_1 - 4)  >= 0 
+	u_3 = 1/(-x_1 + 4)            >= 0 
+	v_1 = (-x_1 + 7)/(-x_1 + 4)   >= 0 
+	y_2 = -5/(x_1 - 4)            >= 0 
+	v_3 = (-x_1 + 9)/(-x_1 + 4)   >= 0 
+	v_4 = (-x_1 + 3)/(-x_1 + 4)   >= 0 
+
+	Valid over:	1.50000000000000 <= x_1 <= 1.85714285714286
+
+
+Region 3:
+
+	s_1 = (-2*x_1^2 + 8)/(x_1^2 - 6*x_1 + 11)         >= 0 
+	u_2 = (-x_1 + 3)/(x_1^2 - 6*x_1 + 11)             >= 0 
+	u_3 = (-x_1 + 5)/(x_1^2 - 6*x_1 + 11)             >= 0 
+	v_1 = (x_1^2 - 7*x_1 + 20)/(x_1^2 - 6*x_1 + 11)   >= 0 
+	y_2 = (-5*x_1 + 17)/(x_1^2 - 6*x_1 + 11)          >= 0 
+	v_3 = (x_1^2 - 10*x_1 + 33)/(x_1^2 - 6*x_1 + 11)  >= 0 
+	y_4 = (7*x_1 - 13)/(x_1^2 - 6*x_1 + 11)           >= 0 
+
+	Valid over:	1.85714285714286 <= x_1 <= 2
+
+
+
+
+Note 1: Above, 'y' variables represent the original variables, whereas 's' variables are slack variables on the inequality constraints, 'v' variables are duals for the non-negativity restrictions on the 'y' variables, and 'u' variables are duals for the inequality constraints. Additionally, all omitted variables should be assumed to be zero.
+
+
+Note 2: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions.

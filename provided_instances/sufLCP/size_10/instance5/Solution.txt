@@ -1,0 +1,83 @@
+The problem entered was an instance of spLCP having the form
+
+	w - M(x)z = q(x)
+	w'z = 0
+	w,z >= 0
+
+with M(x) =
+
+	[ 6          0          1          2          1          1          1          1          1          0         ]
+	[ 0          6          -1         2          0          0          0          0          0          1         ]
+	[ 1          -1         10         1          0          0          0          0          0          0         ]
+	[ 2          2          1          2          0          0          0          0          0          0         ]
+	[ -1         0          0          0          0          0          0          0          0          0         ]
+	[ -1         0          0          0          0          0          0          0          0          0         ]
+	[ -1         0          0          0          0          0          0          0          0          0         ]
+	[ -1         0          0          0          0          0          0          0          0          0         ]
+	[ -1         0          0          0          0          0          0          0          2          0         ]
+	[ 0          -1         0          0          0          0          0          0          0          -2*x_1 + 2 ]
+
+and q(x) =
+
+	[ -51        ]
+	[ -32        ]
+	[ -34        ]
+	[ -27        ]
+	[ 5          ]
+	[ 5          ]
+	[ 5          ]
+	[ 5          ]
+	[ 1          ]
+	[ -2*x_1 - 6 ]
+
+subject to the additional restriction that 'x' must satisfy:
+
+	-x_1 <= 0   
+	x_1  <= 1   
+
+
+
+**************************************************************************************************
+
+The solution was computed in 0.05 seconds and consists of the following regions.
+
+**************************************************************************************************
+
+
+
+
+Region 1:
+
+	z_1 = 5                                 >= 0 
+	z_2 = (772*x_1 - 620)/(136*x_1 - 155)   >= 0 
+	z_3 = (456*x_1 - 465)/(136*x_1 - 155)   >= 0 
+	z_4 = (156*x_1 - 465)/(136*x_1 - 155)   >= 0 
+	z_5 = (1816*x_1 - 1550)/(136*x_1 - 155) >= 0 
+	w_6 = 0                                 >= 0 
+	w_7 = 0                                 >= 0 
+	w_8 = 0                                 >= 0 
+	z_9 = 2                                 >= 0 
+	z_10 = (-136*x_1 - 775)/(136*x_1 - 155)  >= 0 
+
+	Valid over:	0 <= x_1 <= 0.803108808290155
+
+
+Region 2:
+
+	z_1 = 5                              >= 0 
+	w_2 = (386*x_1 - 310)/(-19*x_1 + 19) >= 0 
+	z_3 = 41/19                          >= 0 
+	z_4 = 141/19                         >= 0 
+	z_5 = 2                              >= 0 
+	w_6 = 0                              >= 0 
+	w_7 = 0                              >= 0 
+	w_8 = 0                              >= 0 
+	z_9 = 2                              >= 0 
+	z_10 = (x_1 + 3)/(-x_1 + 1)           >= 0 
+
+	Valid over:	0.803108808290155 <= x_1 <= 1
+
+
+
+
+Note: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions. Additionally, all omitted variables should be assumed to be zero.

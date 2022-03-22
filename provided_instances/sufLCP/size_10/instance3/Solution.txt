@@ -1,0 +1,67 @@
+The problem entered was an instance of spLCP having the form
+
+	w - M(x)z = q(x)
+	w'z = 0
+	w,z >= 0
+
+with M(x) =
+
+	[ 3   -1  0   0   1   1   1   0   0   0  ]
+	[ -1  6   2   -1  0   0   0   1   0   0  ]
+	[ 0   2   4   2   0   0   0   0   1   0  ]
+	[ 0   -1  2   3   0   0   0   0   0   1  ]
+	[ -1  0   0   0   0   0   0   0   0   0  ]
+	[ -1  0   0   0   0   0   0   0   0   0  ]
+	[ -1  0   0   0   0   0   3   0   0   0  ]
+	[ 0   -1  0   0   0   0   0   4   0   0  ]
+	[ 0   0   -1  0   0   0   0   0   2   0  ]
+	[ 0   0   0   -1  0   0   0   0   0   4  ]
+
+and q(x) =
+
+	[ -18         ]
+	[ -29         ]
+	[ -31         ]
+	[ -16         ]
+	[ 4           ]
+	[ 4           ]
+	[ -2*x_1 - 11 ]
+	[ 1           ]
+	[ 1           ]
+	[ -8          ]
+
+subject to the additional restriction that 'x' must satisfy:
+
+	-x_1 <= 0   
+	x_1  <= 1   
+
+
+
+**************************************************************************************************
+
+The solution was computed in 0.04 seconds and consists of the following regions.
+
+**************************************************************************************************
+
+
+
+
+Region 1:
+
+	z_1 = 4            >= 0 
+	z_2 = 5            >= 0 
+	z_3 = 3            >= 0 
+	z_4 = 4            >= 0 
+	z_5 = -2/3*x_1 + 6 >= 0 
+	w_6 = 0            >= 0 
+	z_7 = 2/3*x_1 + 5  >= 0 
+	z_8 = 1            >= 0 
+	z_9 = 1            >= 0 
+	z_10 = 3            >= 0 
+
+	Valid over:	0 <= x_1 <= 1
+
+
+
+
+Note: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions. Additionally, all omitted variables should be assumed to be zero.

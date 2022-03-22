@@ -1,0 +1,67 @@
+The problem entered was an instance of spLCP having the form
+
+	w - M(x)z = q(x)
+	w'z = 0
+	w,z >= 0
+
+with M(x) =
+
+	[ 6           -2          0           -2          -5          6           1           1           1           1          ]
+	[ -2          12          6           0           0           -6          0           0           0           0          ]
+	[ 0           6           10          -1          4           -3          0           0           0           0          ]
+	[ -2          0           -1          4           0           -1          0           0           0           0          ]
+	[ -5          0           4           0           17          -12         0           0           0           0          ]
+	[ 6           -6          -3          -1          -12         14          0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           2*x_1 + 3  ]
+
+and q(x) =
+
+	[ -34       ]
+	[ -16       ]
+	[ -37       ]
+	[ 0         ]
+	[ 34        ]
+	[ -39       ]
+	[ 4         ]
+	[ 7*x_1 + 8 ]
+	[ 5         ]
+	[ 1         ]
+
+subject to the additional restriction that 'x' must satisfy:
+
+	-x_1 <= 0   
+	x_1  <= 1   
+
+
+
+**************************************************************************************************
+
+The solution was computed in 0.04 seconds and consists of the following regions.
+
+**************************************************************************************************
+
+
+
+
+Region 1:
+
+	z_1 = 4                         >= 0 
+	z_2 = 3                         >= 0 
+	z_3 = 3                         >= 0 
+	z_4 = 4                         >= 0 
+	z_5 = 2                         >= 0 
+	z_6 = 5                         >= 0 
+	z_7 = (-8*x_1 - 9)/(-2*x_1 - 3) >= 0 
+	w_8 = 7*x_1 + 4                 >= 0 
+	w_9 = 1                         >= 0 
+	z_10 = -3/(-2*x_1 - 3)           >= 0 
+
+	Valid over:	0 <= x_1 <= 1
+
+
+
+
+Note: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions. Additionally, all omitted variables should be assumed to be zero.

@@ -1,0 +1,99 @@
+The problem entered was an instance of spLCP having the form
+
+	w - M(x)z = q(x)
+	w'z = 0
+	w,z >= 0
+
+with M(x) =
+
+	[ 13          -1          -6          -4          -1          1           1           1           1           1          ]
+	[ -1          4           -6          0           3           0           0           0           0           0          ]
+	[ -6          -6          16          2           -6          0           0           0           0           0          ]
+	[ -4          0           2           3           0           0           0           0           0           0          ]
+	[ -1          3           -6          0           4           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           0          ]
+	[ -1          0           0           0           0           0           0           0           0           2*x_1 + 2  ]
+
+and q(x) =
+
+	[ -18        ]
+	[ -4         ]
+	[ 16         ]
+	[ -5         ]
+	[ -6         ]
+	[ 3          ]
+	[ -2*x_1 + 3 ]
+	[ 3          ]
+	[ 7          ]
+	[ -3         ]
+
+subject to the additional restriction that 'x' must satisfy:
+
+	-x_1 <= 0   
+	x_1  <= 1   
+
+
+
+**************************************************************************************************
+
+The solution was computed in 0.05 seconds and consists of the following regions.
+
+**************************************************************************************************
+
+
+
+
+Region 1:
+
+	z_1 = -2*x_1 + 3                                 >= 0 
+	w_2 = 1/2*x_1 - 1/4                              >= 0 
+	w_3 = 29/3*x_1 - 25/6                            >= 0 
+	z_4 = -8/3*x_1 + 17/3                            >= 0 
+	z_5 = -1/2*x_1 + 9/4                             >= 0 
+	w_6 = 2*x_1                                      >= 0 
+	z_7 = (-178*x_1^2 - 237*x_1 - 11)/(-12*x_1 - 12) >= 0 
+	w_8 = 2*x_1                                      >= 0 
+	w_9 = 2*x_1 + 4                                  >= 0 
+	z_10 = (x_1 - 3)/(-x_1 - 1)                       >= 0 
+
+	Valid over:	0.5 <= x_1 <= 1
+
+
+Region 2:
+
+	z_1 = -2*x_1 + 3                                 >= 0 
+	z_2 = -52/23*x_1 + 1                             >= 0 
+	z_3 = -53/23*x_1 + 1                             >= 0 
+	z_4 = -26/23*x_1 + 5                             >= 0 
+	z_5 = -52/23*x_1 + 3                             >= 0 
+	w_6 = 2*x_1                                      >= 0 
+	z_7 = (-72*x_1^2 - 302*x_1 - 138)/(-23*x_1 - 23) >= 0 
+	w_8 = 2*x_1                                      >= 0 
+	w_9 = 2*x_1 + 4                                  >= 0 
+	z_10 = (x_1 - 3)/(-x_1 - 1)                       >= 0 
+
+	Valid over:	0 <= x_1 <= 0.433962264150943
+
+
+Region 3:
+
+	z_1 = -2*x_1 + 3                                 >= 0 
+	z_2 = -2/7*x_1 + 1/7                             >= 0 
+	w_3 = 212/21*x_1 - 92/21                         >= 0 
+	z_4 = -8/3*x_1 + 17/3                            >= 0 
+	z_5 = -2/7*x_1 + 15/7                            >= 0 
+	w_6 = 2*x_1                                      >= 0 
+	z_7 = (-310*x_1^2 - 414*x_1 - 20)/(-21*x_1 - 21) >= 0 
+	w_8 = 2*x_1                                      >= 0 
+	w_9 = 2*x_1 + 4                                  >= 0 
+	z_10 = (x_1 - 3)/(-x_1 - 1)                       >= 0 
+
+	Valid over:	0.433962264150943 <= x_1 <= 0.5
+
+
+
+
+Note: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions. Additionally, all omitted variables should be assumed to be zero.

@@ -1,0 +1,78 @@
+The problem entered was an instance of mpLCP having the form
+
+	w - M(x)z = q(x)
+	w'z = 0
+	w,z >= 0
+
+with M(x) =
+
+	[ 0         0         0         2         1         6         -1       ]
+	[ 0         0         0         2         -3        1         -x_1 + 2 ]
+	[ 0         0         0         -3        -x_1 + 4  -5        1        ]
+	[ -2        -2        3         0         0         0         0        ]
+	[ -1        3         x_1 - 4   0         0         0         0        ]
+	[ -6        -1        5         0         0         0         0        ]
+	[ 1         x_1 - 2   -1        0         0         0         0        ]
+
+and q(x) =
+
+	[ -2 ]
+	[ 7  ]
+	[ -5 ]
+	[ 1  ]
+	[ 1  ]
+	[ 1  ]
+	[ 1  ]
+
+subject to the additional restriction that 'x' must satisfy:
+
+	-x_1 <= 2   
+	x_1  <= 2   
+
+
+
+**************************************************************************************************
+
+The solution was computed in 0.07 seconds and consists of the following regions.
+
+**************************************************************************************************
+
+
+
+
+Region 1:
+
+	z_1 = (-x_1 + 9)/(-6*x_1 + 29)     >= 0 
+	w_2 = (-44*x_1 + 86)/(-6*x_1 + 29) >= 0 
+	z_3 = 5/(-6*x_1 + 29)              >= 0 
+	w_4 = (-4*x_1 + 26)/(-6*x_1 + 29)  >= 0 
+	z_5 = 40/(-6*x_1 + 29)             >= 0 
+	z_6 = (-2*x_1 + 3)/(-6*x_1 + 29)   >= 0 
+	w_7 = (-7*x_1 + 33)/(-6*x_1 + 29)  >= 0 
+
+
+Region 2:
+
+	w_1 = (-2*x_1 + 3)/(x_1 - 4) >= 0 
+	w_2 = (7*x_1 - 13)/(x_1 - 4) >= 0 
+	z_3 = 1/(-x_1 + 4)           >= 0 
+	w_4 = (-x_1 + 7)/(-x_1 + 4)  >= 0 
+	z_5 = -5/(x_1 - 4)           >= 0 
+	w_6 = (-x_1 + 9)/(-x_1 + 4)  >= 0 
+	w_7 = (-x_1 + 3)/(-x_1 + 4)  >= 0 
+
+
+Region 3:
+
+	w_1 = (-2*x_1^2 + 8)/(x_1^2 - 6*x_1 + 11)        >= 0 
+	z_2 = (-x_1 + 3)/(x_1^2 - 6*x_1 + 11)            >= 0 
+	z_3 = (-x_1 + 5)/(x_1^2 - 6*x_1 + 11)            >= 0 
+	w_4 = (x_1^2 - 7*x_1 + 20)/(x_1^2 - 6*x_1 + 11)  >= 0 
+	z_5 = (-5*x_1 + 17)/(x_1^2 - 6*x_1 + 11)         >= 0 
+	w_6 = (x_1^2 - 10*x_1 + 33)/(x_1^2 - 6*x_1 + 11) >= 0 
+	z_7 = (7*x_1 - 13)/(x_1^2 - 6*x_1 + 11)          >= 0 
+
+
+
+
+Note: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions. Additionally, all omitted variables should be assumed to be zero.

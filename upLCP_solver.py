@@ -177,7 +177,7 @@ outputFile = open(outputFilename, 'w')
 
 k = 1
 if probType == "LCP":
-    print("The problem entered was an instance of spLCP having the form\n", file = outputFile)
+    print("The problem entered was an instance of upLCP having the form\n", file = outputFile)
     print("\tw - M(x)z = q(x)\n\tw'z = 0\n\tw,z >= 0\n", file = outputFile)
 
     mx = max((len(str(ele.Str())) for row in originalGmatrix for ele in row[numVar:-1]))
@@ -219,7 +219,7 @@ if probType == "LCP":
             
     print("\n\n\n\nNote: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions. Additionally, all omitted variables should be assumed to be zero.", file = outputFile)
 else:
-    print("The problem entered was an instance of sp" + probType + " having the form\n", file = outputFile)
+    print("The problem entered was an instance of up" + probType + " having the form\n", file = outputFile)
     if probType == "LP":
         print("\tmin \tc(x)'y\n\ts.t.\tA(x)y <= b(x)\n\t    \ty >= 0\n", file = outputFile)
     else:

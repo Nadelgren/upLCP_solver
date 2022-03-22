@@ -1,0 +1,93 @@
+The problem entered was an instance of spQP having the form
+
+	min 	c(x)'y + (1/2)y'Q(x)y
+	s.t.	A(x)y <= b(x)
+	    	y >= 0
+
+with c(x) =
+
+	[ 1  ]
+	[ 1  ]
+	[ 1  ]
+	[ 1  ]
+
+and Q(x) =
+
+	[ -9*x_1 + 22   -11*x_1 + 6   -24*x_1 + 16  -25*x_1 + 18 ]
+	[ -11*x_1 + 6   -14*x_1 + 20  4*x_1 - 2     -6*x_1 + 15  ]
+	[ -24*x_1 + 16  4*x_1 - 2     -8*x_1 + 18   -5*x_1 + 10  ]
+	[ -25*x_1 + 18  -6*x_1 + 15   -5*x_1 + 10   -3*x_1 + 21  ]
+
+and A(x) =
+
+	[ -2   -1   -6   1   ]
+	[ -2   3    -1   -2  ]
+	[ 3    -4   5    -1  ]
+
+and b(x) =
+
+	[ -2  ]
+	[ 7   ]
+	[ -5  ]
+
+subject to the additional restriction that 'x' must satisfy:
+
+	-x_1  <= 0    
+	x_1   <= 1    
+
+
+
+**************************************************************************************************
+
+The solution was computed in 0.06 seconds and consists of the following regions.
+
+**************************************************************************************************
+
+
+
+
+Region 1:
+
+	u_1 = -2196/841*x_1 + 4127/841    >= 0 
+	s_2 = 86/29                       >= 0 
+	u_3 = -3424/841*x_1 + 4935/841    >= 0 
+	v_1 = -20728/841*x_1 + 15744/841  >= 0 
+	y_2 = 40/29                       >= 0 
+	y_3 = 3/29                        >= 0 
+	v_4 = -6167/841*x_1 + 18303/841   >= 0 
+
+	Valid over:	0 <= x_1 <= 0.759552296410652
+
+
+Region 2:
+
+	u_1 = (115508*x_1^2 - 117585*x_1 - 21016)/(-71*x_1 - 14888)  >= 0 
+	s_2 = (-16650*x_1 - 31664)/(-71*x_1 - 14888)                 >= 0 
+	u_3 = (56336*x_1^2 - 28857*x_1 - 52056)/(-71*x_1 - 14888)    >= 0 
+	y_1 = (-20728*x_1 + 15744)/(-71*x_1 - 14888)                 >= 0 
+	y_2 = (-5816*x_1 - 16192)/(-71*x_1 - 14888)                  >= 0 
+	y_3 = (7855*x_1 - 7512)/(-71*x_1 - 14888)                    >= 0 
+	v_4 = (572993*x_1^2 - 729481*x_1 - 18456)/(-71*x_1 - 14888)  >= 0 
+
+	Valid over:	0.759552296410652 <= x_1 <= 0.956333545512412
+
+
+Region 3:
+
+	u_1 = -1583/121*x_1 + 1739/121  >= 0 
+	s_2 = 35/11                     >= 0 
+	u_3 = -311/121*x_1 + 525/121    >= 0 
+	y_1 = 3/11                      >= 0 
+	y_2 = 16/11                     >= 0 
+	v_3 = 7855/121*x_1 - 7512/121   >= 0 
+	v_4 = -3153/121*x_1 + 4569/121  >= 0 
+
+	Valid over:	0.956333545512412 <= x_1 <= 1
+
+
+
+
+Note 1: Above, 'y' variables represent the original variables, whereas 's' variables are slack variables on the inequality constraints, 'v' variables are duals for the non-negativity restrictions on the 'y' variables, and 'u' variables are duals for the inequality constraints. Additionally, all omitted variables should be assumed to be zero.
+
+
+Note 2: The region descriptions above do not include the 'additional restrictions' listed at the top of this document, although these restrictions do, of course, apply to all regions.

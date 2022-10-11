@@ -318,8 +318,9 @@ def ReadLCP(lines, start, Pari, sys, logging, re, numVar, numParam, gMatrix, xVa
 #           numCol
 def ReadQP(lines, start, Pari, sys, logging, re, numVar, numParam, gMatrix, xVar, paramSpace, gxInitialized, mIsNumeric):
     i = start
-    numCol = 0
-    numRow = 0
+    numCol = -1
+    numRow = -1
+    numParam = -1
     while i < len(lines):
         if not lines[i].strip() == "":
             if lines[i].strip().upper() == "NUM_COL":
@@ -332,7 +333,7 @@ def ReadQP(lines, start, Pari, sys, logging, re, numVar, numParam, gMatrix, xVar
                 numParam = int(lines[i+1].strip())
                 i += 1
             else:
-                if not numCol or not numRow or not numParam:
+                if numCol < 0 or numRow < 0 or numParam < 0:
                     sys.exit("After problem type specification, the data file must next include a specification of the number of columns (via keyword 'num_col'), the number of rows (via keyword 'num_row'), and the number of parameters (via keyword 'num_param')! Please check file format and try again. Exiting!")
                 if not gxInitialized:
                     numVar = numCol + numRow

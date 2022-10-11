@@ -33,8 +33,9 @@ def matrixPivot(M, i, j):
     for row in range(len(M)):
         if row != i:
             temp2 = M[row][j]
-            for col in range(len(M[row])):
-                M[row][col] -= temp2*M[i][col]
+            if temp2 != 0:
+                for col in range(len(M[row])):
+                    M[row][col] -= temp2*M[i][col]
         
     return(M)
     

@@ -1,8 +1,4 @@
----
-output:
-  pdf_document: default
-  html_document: default
----
+
 # upLCPsolver
 
 **Unfortunately, MarkDown files on GitHub do not properly display LaTeX. It is recommended that you view the PDF version.**
@@ -11,13 +7,13 @@ output:
 
 upLCPsolver is a software package designed to solve the uni-parametric Linear Complementarity Problem (upLCP):
 
-\[
+\\[
 \begin{array}{c}
 w - M(\theta)z = q(\theta)\\[1mm]
 w^\top z = 0\\[1mm]
 w,z \geq 0
 \end{array}
-\]
+\\]
 
 upLCPsolver offers a simplification of the methodology developed for multi-parametric Linear Complementarity Problems (mpLCP) by Nathan Adelgren.[^fn1] Specifics of the methodology employed within upLCPsolver are outlined in a paper submitted for publication in March 2022. This document will be updated with a reference if/when that work is published.
 

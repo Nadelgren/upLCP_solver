@@ -62,7 +62,7 @@ def ProcessQ(q, finalPartition, created, finished, lock, numThreads):
         mult = 0.5
         point = [mult*interval[0] + (1.0 - mult)*interval[1], 0]
         basis, mat, feasible = CrissCross(pari, logging, numVar, curMat, xVar, point, epsilon, curBasis)
-
+        
         if not feasible:
             sys.exit("Criss Cross failed. Exiting.")
 
@@ -112,6 +112,7 @@ numVar, numParam, gMatrix, xVar, paramSpace, mIsNumeric, probType, numRow, numCo
                                                                                                 paramSpace, 
                                                                                                 gxInitialized, 
                                                                                                 mIsNumeric)
+
 originalGmatrix = [row[:] for row in gMatrix] #deep copy
 originalBasis = list(range(numVar))
 
@@ -265,13 +266,13 @@ else:
             for i in range(len(rhs)):
                 var = ""
                 if basis[i] < numVar:
-                    if i >= numCol - 1:
-                        var = "v_" + str(i + 2 - numCol)
+                    if i >= numRow:
+                        var = "v_" + str(i + 1 - numRow)
                     else:
                         var = "s_" + str(i + 1)
                 else:
-                    if i >= numCol - 1: 
-                        var = "y_" + str(i + 2 - numCol)
+                    if i >= numRow: 
+                        var = "y_" + str(i + 1 - numRow)
                     else:
                         var = "u_" + str(i + 1)
                 print("\t" + var + " = " + " ".join(["{:<{mx}}".format(str(rhs[i].Str()),mx=mx)]) + " >= 0 ", file = outputFile)

@@ -213,36 +213,38 @@ This format is used to specify a uni-parametric quadratic program (upQP). The fi
 - END -- specifies the end of the file.
 
 As an example, consider the following instance of upQP:
+
 $$
 \begin{array}{lc}
 \min & \frac{1}{2}x^\top\left[
   \begin{array}{rrrr}
-  -9\theta + 22 & -11\theta+6  & -24\theta+16  & -25\theta+18\\
-  -11\theta+6   & -14\theta+20 & 4\theta - 2   & -6\theta+15\\
-  -24\theta+16  & 4\theta - 2  & -8\theta + 18 & -5\theta+10\\
+  -9\theta + 22 & -11\theta+6  & -24\theta+16  & -25\theta+18\\\\
+  -11\theta+6   & -14\theta+20 & 4\theta - 2   & -6\theta+15\\\\
+  -24\theta+16  & 4\theta - 2  & -8\theta + 18 & -5\theta+10\\\\
   -25\theta+18  & -6\theta+15  & -5\theta+10   & -3\theta+21
   \end{array}
 \right]x + \left[
   \begin{array}{rrrr}
-  1 & 1 & 1 & 1\\
+  1 & 1 & 1 & 1
   \end{array}
-\right]^\top x\\[1mm]
+\right]^\top x\\\\[1mm]
 \text{s.t} & \left[
   \begin{array}{rrrr}
-  -2 & -1 & -6 & 1\\
-  -2 & 3  & -1 & -2\\
-  3  & -4 & 5  & -1\\
+  -2 & -1 & -6 & 1\\\\
+  -2 & 3  & -1 & -2\\\\
+  3  & -4 & 5  & -1
   \end{array}
 \right]x \leq \left[
   \begin{array}{r}
-  -2\\
-  7\\
+  -2\\\\
+  7\\\\
   -5
   \end{array}
-\right]\\[1mm]
+\right]\\\\[1mm]
 & x \geq 0
 \end{array}
 $$
+
 with $\theta \in \Theta = [0, 1]$.
 
 The data file for this instance would be as follows:
@@ -351,27 +353,29 @@ The data file for this instance would be as follows:
 - END -- specifies the end of the file.
                        
 As an example, consider the following instance of upLCP:
+
 $$
 \begin{array}{c}
 w - \left[
   \begin{array}{rrrr}
-  0 & 0             & -2  & -1\\
-  0 & 0             & -5  & \theta + 7\\
-  1 & 3             & 0   & 0\\
-  1 & -\theta - 5 &     & 0\\
+  0 & 0             & -2  & -1\\\\
+  0 & 0             & -5  & \theta + 7\\\\
+  1 & 3             & 0   & 0\\\\
+  1 & -\theta - 5 &     & 0
   \end{array}
 \right]z = \left[
   \begin{array}{r}
-  2\\
-  \theta + 2\\
-  20\\
-  10\\
+  2\\\\
+  \theta + 2\\\\
+  20\\\\
+  10
   \end{array}
-\right]\\[1mm]
-w^\top z = 0\\[1mm]
+\right]\\\\[1mm]
+w^\top z = 0\\\\[1mm]
 w,z \geq 0
 \end{array}
 $$
+
 with $\theta \in \Theta = [-3, 1]$.
 
 The data file for this instance would be as follows:

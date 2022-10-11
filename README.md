@@ -113,14 +113,14 @@ $$
 \begin{array}{lc}
 \min & \left[
   \begin{array}{rrrr}
-  1 & 1 & 1 & 1\\\\
+  1 & 1 & 1 & 1
   \end{array}
-\right]^\top x\\\\[1mm]
+\right] x\\\\[1mm]
 \text{s.t} & \left[
   \begin{array}{rrrr}
   -2 & -1         & -6 & 1\\\\
   -2 & 3          & -1 & \theta - 2\\\\
-  3  & \theta - 4 & 5  & -1\\\\
+  3  & \theta - 4 & 5  & -1
   \end{array}
 \right]x \leq \left[
   \begin{array}{r}

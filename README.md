@@ -29,11 +29,11 @@ $$
 or uni-parametric QPs (upQPs) having the form
 
 $$
-\begin{array}{lr}
+\begin{align*}{lr}
 \min\quad & \frac{1}{2} x^\top Q(\theta) x + c(\theta)^\top x\\\\[1mm]
 \text{s.t.}\quad & A(\theta) x \leq b(\theta)\\\\[1mm]
 & x \geq 0.
-\end{array}
+\end{align*}
 $$
 
 Note that correct functionality of this version of upLCP relies on the following assumptions:

@@ -30,8 +30,8 @@ or uni-parametric QPs (upQPs) having the form
 
 $$
 \begin{array}{lr}
-\min & \frac{1}{2} x^\top Q(\theta) x + c(\theta)^\top x\\\\[1mm]
-\text{s.t.} & A(\theta) x \leq b(\theta)\\\\[1mm]
+\min\quad & \frac{1}{2} x^\top Q(\theta) x + c(\theta)^\top x\\\\[1mm]
+\text{s.t.}\quad & A(\theta) x \leq b(\theta)\\\\[1mm]
 & x \geq 0.
 \end{array}
 $$

@@ -40,7 +40,7 @@ Note that correct functionality of this version of upLCP relies on the following
 
 > *Assumption 1* -- The parameter $\theta$ lies within an interval $\Theta := [\alpha, \beta] \subset \mathbb{R}$ and, moreover, the associated upLCP, upLP, and/or upQP is feasible for every $\theta \in \Theta$.
 
-> *Assumption 2* -- When the given uni-parametric problem is formulated as an instance of upLCP, the matrix $M(\theta)$ is sufficient for all $\theta \in \Theta$ (with $I$ defined as above). 
+> *Assumption 2* -- When the given uni-parametric problem is formulated as an instance of upLCP, the matrix $M(\theta)$ is sufficient for all $\theta \in \Theta$. 
 
 Refer to Cottle et al.[^fn2] for the definition of sufficiency.
 
@@ -227,7 +227,7 @@ $$
   \begin{array}{rrrr}
   1 & 1 & 1 & 1
   \end{array}
-\right]^\top x\\\\[1mm]
+\right] x\\\\[1mm]
 \text{s.t} & \left[
   \begin{array}{rrrr}
   -2 & -1 & -6 & 1\\\\

@@ -19,11 +19,11 @@ upLCPsolver offers a simplification of the methodology developed for multi-param
 Additonally, as both linear programs (LPs) and quadratic programs (QPs) can be formulated as LCPs, upLCPsolver is capable of solving uni-parametric LPs (upLPs) having the form 
 
 $$
-\begin{array}{lr}
+\begin{align*}
 \min & c(\theta)^\top x\\\\[1mm]
 \text{s.t.} & A(\theta) x \leq b(\theta)\\\\[1mm]
 & x \geq 0
-\end{array}
+\end{align*}
 $$
 
 or uni-parametric QPs (upQPs) having the form

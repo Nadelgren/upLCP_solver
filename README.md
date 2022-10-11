@@ -46,7 +46,7 @@ Refer to Cottle et al.[^fn2] for the definition of sufficiency.
 
 ### Background
 
-upLCPsolver is written in Python and is released as open source code under the (enter license information here).
+upLCPsolver is written in Python and is released as open source code under the GNU General Public License.
 The code has been written by Nathan Adelgren.
 
 upLCPsolver has only been tested on Linux systems, but should be compatible with other operating systems as long as all dependencies listed below can be met.

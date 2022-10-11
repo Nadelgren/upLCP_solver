@@ -29,7 +29,7 @@ $$
 or uni-parametric QPs (upQPs) having the form
 
 $$
-\begin{align*}{lr}
+\begin{align*}
 \min\quad & \frac{1}{2} x^\top Q(\theta) x + c(\theta)^\top x\\\\[1mm]
 \text{s.t.}\quad & A(\theta) x \leq b(\theta)\\\\[1mm]
 & x \geq 0.
@@ -108,7 +108,7 @@ This format is used to specify a uni-parametric linear program (upLP). The file 
 - END -- specifies the end of the file.
 
 As an example, consider the following instance of upLP:
-\[
+$$
 \begin{array}{lc}
 \min & \left[
   \begin{array}{rrrr}
@@ -130,7 +130,7 @@ As an example, consider the following instance of upLP:
 \right]\\[1mm]
 & x \geq 0
 \end{array}
-\]
+$$
 with $\theta \in \Theta = [-2, 2]$.
 
 The data file for this instance would be as follows:
@@ -211,7 +211,7 @@ This format is used to specify a uni-parametric quadratic program (upQP). The fi
 - END -- specifies the end of the file.
 
 As an example, consider the following instance of upQP:
-\[
+$$
 \begin{array}{lc}
 \min & \frac{1}{2}x^\top\left[
   \begin{array}{rrrr}
@@ -240,7 +240,7 @@ As an example, consider the following instance of upQP:
 \right]\\[1mm]
 & x \geq 0
 \end{array}
-\]
+$$
 with $\theta \in \Theta = [0, 1]$.
 
 The data file for this instance would be as follows:
@@ -349,7 +349,7 @@ The data file for this instance would be as follows:
 - END -- specifies the end of the file.
                        
 As an example, consider the following instance of upLCP:
-\[
+$$
 \begin{array}{c}
 w - \left[
   \begin{array}{rrrr}
@@ -369,7 +369,7 @@ w - \left[
 w^\top z = 0\\[1mm]
 w,z \geq 0
 \end{array}
-\]
+$$
 with $\theta \in \Theta = [-3, 1]$.
 
 The data file for this instance would be as follows:

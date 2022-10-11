@@ -20,8 +20,8 @@ Additonally, as both linear programs (LPs) and quadratic programs (QPs) can be f
 
 $$
 \begin{align*}
-\min & c(\theta)^\top x\\\\[1mm]
-\text{s.t.} & A(\theta) x \leq b(\theta)\\\\[1mm]
+\min\quad & c(\theta)^\top x\\\\[1mm]
+\text{s.t.}\quad & A(\theta) x \leq b(\theta)\\\\[1mm]
 & x \geq 0
 \end{align*}
 $$

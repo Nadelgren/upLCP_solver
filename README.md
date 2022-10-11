@@ -1,7 +1,6 @@
 
 # upLCPsolver
 
-**Unfortunately, MarkDown files on GitHub do not properly display LaTeX. It is recommended that you view the PDF version.**
 
 ### Introduction
 
@@ -9,8 +8,8 @@ upLCPsolver is a software package designed to solve the uni-parametric Linear Co
 
 $$
 \begin{array}{c}
-w - M(\theta)z = q(\theta)\\[1mm]
-w^\top z = 0\\[1mm]
+w - M(\theta)z = q(\theta)\\\\[1mm]
+w^\top z = 0\\\\[1mm]
 w,z \geq 0
 \end{array}
 $$

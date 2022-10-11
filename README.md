@@ -108,6 +108,7 @@ This format is used to specify a uni-parametric linear program (upLP). The file 
 - END -- specifies the end of the file.
 
 As an example, consider the following instance of upLP:
+
 $$
 \begin{array}{lc}
 \min & \left[
@@ -131,6 +132,7 @@ $$
 & x \geq 0
 \end{array}
 $$
+
 with $\theta \in \Theta = [-2, 2]$.
 
 The data file for this instance would be as follows:

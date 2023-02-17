@@ -237,14 +237,14 @@ else:
         for row in originalGmatrix[numRow:]:
             print("\t[ " + "  ".join(["{:<{mx}}".format(str((-1*ele).Str()),mx=mx) for ele in row[(numVar+numRow):-1]]) + " ]", file = outputFile)
             
-    mx = max((len(str(ele.Str())) for row in originalGmatrix[0:(numCol-1)] for ele in row[(numVar+numRow):-1])) + 1
+    mx = max((len(str(ele.Str())) for row in originalGmatrix[0:numRow] for ele in row[(numVar+numRow):-1])) + 1
     print("\nand A(x) =\n", file = outputFile)
-    for row in originalGmatrix[0:(numCol-1)]:
+    for row in originalGmatrix[0:numRow]:
         print("\t[ " + "  ".join(["{:<{mx}}".format(str((ele).Str()),mx=mx) for ele in row[(numVar+numRow):-1]]) + " ]", file = outputFile)
         
-    mx = max((len(str(ele.Str())) for row in originalGmatrix[0:(numCol-1)] for ele in row[2*numVar:])) + 1
+    mx = max((len(str(ele.Str())) for row in originalGmatrix[0:numRow] for ele in row[2*numVar:])) + 1
     print("\nand b(x) =\n", file = outputFile)
-    for row in originalGmatrix[0:(numCol-1)]:
+    for row in originalGmatrix[0:numRow]:
         print("\t[ " + "  ".join(["{:<{mx}}".format(str(ele.Str()),mx=mx) for ele in row[2*numVar:]]) + " ]", file = outputFile)
         
     mx = max((len(str(ele.Str())) for row in paramSpace for ele in row)) + 1
